@@ -22,22 +22,59 @@ html {
 /*--------------------------------------------------*/
 
 
-.row{
+.row {
     max-width: 700px;
     margin: 0 auto;
 }
 
- 
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
 /* HEADING COMPONENTS */
- 
-h2 {
-    margin: 0;
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1 {
+    word-spacing: 4px;
+    margin-top: 0;
+    margin-bottom: 20px;
     color: #fff;
     font-size: 240%;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    word-spacing: 4px;
-    font-weight: 300;
+}
+
+h2 {
+    font-size: 150%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .hero-text-box {
@@ -47,6 +84,33 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+/* ---PARAGRAPHS-------- */
+.long-copy {
+    line-height: 145%;
+    width: 106%;
+    margin-left: -3%;
+}
+
+.para{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.box p{
+    font-size: 80%;
+    line-height: 145%;
+}
+
+/* ---ICONS-------- */
+.icon-big{
+    font-size: 250%;
+    display: block;
+    color:#e67e22;
+    margin-bottom: 10px;
+}
+
 
 /* ---BUTTONS-------- */
 
@@ -60,7 +124,7 @@ h2 {
     transition: background-color 0.8s, border 0.8s, color 0.8s;
     margin-right: 15px;
     margin-top: 15px;
-    
+
 }
 
 .btn-full:link,
@@ -73,23 +137,23 @@ h2 {
 .btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid #e67e22;
-    color: #e67e22;    
+    color: #e67e22;
 }
 
 .btn:hover,
 .btn:active {
- background-color: #cf6d17;
+    background-color: #cf6d17;
 }
 
 .btn-full:hover,
 .btn-full:active {
-     border: 1px solid #cf6d17;
- }
+    border: 1px solid #cf6d17;
+}
 
 .btn-ghost:hover,
 .btn-ghost:active {
     border: 1px solid #cf6d17;
-    color: #fff;    
+    color: #fff;
 }
 
 /*--------------------------------------------------*/
@@ -120,7 +184,7 @@ header {
     margin-right: -100px;
 }
 
-.main-nav li{
+.main-nav li {
     display: inline-block;
     margin-left: 40px;
 }
