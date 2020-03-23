@@ -17,6 +17,18 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*--------------------------------------------------*/
 /* REUSABLE COMPONENTS */
 /*--------------------------------------------------*/
@@ -29,6 +41,7 @@ html {
 
 section {
     padding: 80px 0;
+    margin-top: -100px;
 }
 
 .box {
@@ -95,21 +108,21 @@ h2:after {
     margin-left: -3%;
 }
 
-.para{
+.para {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.box p{
+.box p {
     font-size: 80%;
     line-height: 145%;
 }
 
 /* ---ICONS-------- */
-.icon-big{
+.icon-big {
     font-size: 250%;
     display: block;
-    color:#e67e22;
+    color: #e67e22;
     margin-bottom: 10px;
 }
 
@@ -210,7 +223,7 @@ header {
 /*--------------------------------------------------*/
 /* Features */
 /*--------------------------------------------------*/
-.section-features .long-copy{
+.section-features .long-copy {
     margin-bottom: 30px;
 }
 
@@ -219,36 +232,92 @@ header {
 /* Meals */
 /*--------------------------------------------------*/
 
-.meals-showcase{
+.meals-showcase {
     list-style: none;
     width: 100%;
 }
 
-.meals-showcase li{
+.meals-showcase li {
     display: block;
-    float:left;
+    float: left;
     width: 25%;
 }
 
-.meal-photo{
-    width:1005;
-    margin:0;
+.meal-photo {
+    width: 1005;
+    margin: 0;
     overflow: hidden;
     background-color: #000;
 }
 
-.meal-photo img{
+.meal-photo img {
     opacity: 0.7;
-    width:100%;
+    width: 100%;
     height: auto;
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s;
 }
 
-.meal-photo img:hover{
+.meal-photo img:hover {
     opacity: 1;
     transform: scale(1.08);
 }
+
 .section-meals {
     margin-top: 15%;
+}
+
+/*--------------------------------------------------*/
+/* Meals */
+/*--------------------------------------------------*/
+.section-steps{
+    background: #f4f4f4;
+}
+
+.steps-box {
+    margin-top: 10%;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+}
+
+.app-screen {
+    width: 60%;
+}
+
+.works-step {
+    margin-bottom: 41px;
+    font-size: 16px;
+    width: 113%;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    padding: 7px;
+    float: left;
+    font-size: 110%;
+    margin-right: 25px;
+}
+
+.btn-app img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
 }
