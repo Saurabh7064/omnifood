@@ -120,7 +120,7 @@ h2:after {
 
 /* ---LINKS-------- */
 a:link,
-a:active{
+a:active {
     color: #e67e22;
     text-decoration: none;
     padding-bottom: 1px;
@@ -129,7 +129,7 @@ a:active{
 }
 
 a:hover,
-a:active{
+a:active {
     color: #555;
     border-bottom: 1px solid transparent;
 }
@@ -143,7 +143,7 @@ a:active{
     margin-bottom: 10px;
 }
 
-.icon-small{
+.icon-small {
     display: inline-block;
     width: 13px;
     text-align: center;
@@ -210,6 +210,8 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    margin-bottom: 50px;
+    background-attachment: fixed;
 }
 
 
@@ -299,7 +301,7 @@ header {
 /*--------------------------------------------------*/
 /* Meals */
 /*--------------------------------------------------*/
-.section-steps{
+.section-steps {
     background: #f4f4f4;
 }
 
@@ -357,20 +359,141 @@ header {
 }
 
 /*--------------------------------------------------*/
-/* Meals */
+/* CITY */
 /*--------------------------------------------------*/
 
-.box img{
+.box img {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
+
 .city {
     margin-top: 80px;
 }
 
-.city-feature{
+.city-feature {
     margin-bottom: 5px;
     font-size: 15px;
 }
 
+/*--------------------------------------------------*/
+/* TESTIMONIALS */
+/*--------------------------------------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    margin-top: -5%;
+    margin-bottom: 7%;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    /*--Use display:block Trick to put next element down---*/
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.row-width {
+    max-width: 85%;
+}
+
+/*--------------------------------------------------*/
+/* SIGN UP */
+/*--------------------------------------------------*/
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 119%;
+    margin-left: -70%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+}
+
+.plan-price {
+    font-size: 246%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    /*--span inherits the size from previous style---*/
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+    font-size: 80%;
+
+}
+
+.box-one {
+    margin-left: -35%;
+}
+
+.box-two {
+    margin-left: 0%;
+}
+
+.box-three {
+    margin-left: 35%;
+}
