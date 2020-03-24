@@ -118,12 +118,41 @@ h2:after {
     line-height: 145%;
 }
 
+/* ---LINKS-------- */
+a:link,
+a:active{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom: 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
 /* ---ICONS-------- */
 .icon-big {
     font-size: 250%;
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 13px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 6px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
 }
 
 
@@ -312,8 +341,13 @@ header {
     text-align: center;
     padding: 7px;
     float: left;
-    font-size: 110%;
+    font-size: 150%;
     margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
 }
 
 .btn-app img {
@@ -321,3 +355,22 @@ header {
     width: auto;
     margin-right: 10px;
 }
+
+/*--------------------------------------------------*/
+/* Meals */
+/*--------------------------------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city {
+    margin-top: 80px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
