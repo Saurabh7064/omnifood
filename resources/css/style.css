@@ -8,13 +8,17 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Aerial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    /*to hide down scroll when there is an extra space overflow-x*/
+    overflow-x: hidden;
+
 }
 
 .clearfix {
@@ -593,7 +597,7 @@ footer {
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-googleplus,
-.ion-social-instagram{
+.ion-social-instagram {
     transition: color 0.2s;
 }
 
